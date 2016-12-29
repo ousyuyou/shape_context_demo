@@ -9,8 +9,12 @@
 %X=x1;
 %Y=y2a;
 
-contours2=load('contours/targent_n_contour.dat');
-contours1=load('contours/standard/N_contours.dat');
+%contours2=load('contours/targent_n_contour.dat');
+%contours1=load('contours/standard/N_contours.dat');
+paths = load('-text','filenames_save-text.txt')
+contours2=load(paths.target_contours_path);
+contours1=load(paths.standard_contours_path);
+
 X=x1=y2=contours1;
 Y=y2a=contours2;
 

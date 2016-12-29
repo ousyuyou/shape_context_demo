@@ -1,10 +1,10 @@
 # name: target_contours_path
 # type: sq_string
 # elements: 1
-# length: 52
-D:/shape_context_demo/contours/targent_n_contour.dat
+# length: 58
+D:/shape_context_demo/contours/target_target_n_contour.dat
 # name: standard_contours_path
 # type: sq_string
 # elements: 1
 # length: 54
-D:/shape_context_demo/contours/standard/N_contours.dat
+D:/shape_context_demo/contours/standard/1_contours.dat

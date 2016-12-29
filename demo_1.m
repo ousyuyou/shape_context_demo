@@ -11,7 +11,7 @@
 
 %contours2=load('contours/targent_n_contour.dat');
 %contours1=load('contours/standard/N_contours.dat');
-paths = load('-text','filenames_save-text.txt')
+paths = load('-text','filenames_save-text.txt');
 contours2=load(paths.target_contours_path);
 contours1=load(paths.standard_contours_path);
 

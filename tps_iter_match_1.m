@@ -58,11 +58,18 @@ while s
 
    % extract coordinates of non-dummy correspondences and use them
    % to estimate transformation
-   ind_good=find(~isnan(X2b(1:nsamp1,1)));
+   if nsamp1 > nsamp2
+      ind_good=find(~isnan(X2b(1:nsamp2,1)));
+   else
+      ind_good=find(~isnan(X2b(1:nsamp1,1)));
+   end
+   
    % NOTE: Gianluca said he had to change nsamp1 to nsamp2 in the
    % preceding line to get it to work properly when nsamp1~=nsamp2 and
    % both sides have outliers...
    n_good=length(ind_good);
+   disp(['n_good=' int2str(n_good)])
+   
    X3b=X2b(ind_good,:);
    Y3=Y2(ind_good,:);
 
